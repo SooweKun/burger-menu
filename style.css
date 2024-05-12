@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 34, 34);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 300px;
+    position: relative;
+    color: rgb(185, 183, 183);
+    font-size: 20px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #333740;
+}
+
+#select-text,
+#select-arrow {
+    pointer-events: none;
+}
+
+.option-list {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: #333740;
+    overflow: hidden;
+    display: none;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 55px;
+    transition: 0.5s;
+}
+
+.option:hover {
+    background-color: rgb(37, 34, 34);
+}
+
+.active{
+    display: block;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
